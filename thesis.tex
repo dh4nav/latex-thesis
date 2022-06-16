@@ -1,5 +1,12 @@
 \documentclass{scrbook}
+%\documentclass{article}
+\usepackage{mdframed}
+\usepackage{amsmath}
+\usepackage{tikz}
+\usepackage{lipsum}
+\usepackage{svg}
 
+%\usepackage[utf8]{inputenc}
 \input{style}
 \input{macros}
 
@@ -14,14 +21,16 @@
 \input{schema-color}
 %\input{schema-gray}
 
+
+
 \newcommand{\duedate}{15. Juli 2016}
 
 \begin{document}
   \frontmatter
   \include{title}
-  \include{declaration}
+  %\include{declaration}
 
-  \include{abstract}
+  %\include{abstract}
 
   \cleardoublepage
   \phantomsection
@@ -32,48 +41,56 @@
   % Remove this for the final version of the thesis!
   \cleardoublepage
   \phantomsection
-  \newcommand{\listtodoname}{Aufgabenverzeichnis}
-  \pdfbookmark{\listtodoname}{listoftodos}
-  \listoftodos[\listtodoname]
+  %\newcommand{\listtodoname}{Aufgabenverzeichnis}
+  %\pdfbookmark{\listtodoname}{listoftodos}
+  %\listoftodos[\listtodoname]
 
   \mainmatter
-  \include{einleitung}
-  \include{grundlagen}
-  \include{konzept}
-  \include{evaluation}
-  \include{fazit}
-
+  %\include{einleitung}
+  \include{Ch1-Mechanik}
+  \include{Ch2-AufbauMaterie}
+  \include{Ch4-Etech}  
+  \include{Ch3-QM-RT}
+  
   \appendix
+  \include{Ch5-Mathe}
+  \include{Ch6-Literatur}
+  %\include{grundlagen}
+  %\include{konzept}
+  %\include{evaluation}
+  %\include{fazit}
 
-  \include{appendix}
+  
+
+  %\include{appendix}
 
   \backmatter
 
   \cleardoublepage
-  \phantomsection
-  \pdfbookmark{\listfigurename}{listoffigures}
-  \listoffigures
+  %\phantomsection
+  %\pdfbookmark{\listfigurename}{listoffigures}
+  %\listoffigures
 
-  \cleardoublepage
-  \phantomsection
-  \pdfbookmark{\listtablename}{listoftables}
-  \listoftables
+  %\cleardoublepage
+  %\phantomsection
+  %\pdfbookmark{\listtablename}{listoftables}
+  %\listoftables
 
-  \cleardoublepage
-  \phantomsection
-  \renewcommand{\listtheoremname}{Definitions- und Theoremverzeichnis}
-  \pdfbookmark{\listtheoremname}{listoftheorems}
-  \listoftheorems[ignoreall,show={Lemma,Theorem,Korollar,Definition}]
+  %\cleardoublepage
+  %\phantomsection
+  %\renewcommand{\listtheoremname}{Definitions- und Theoremverzeichnis}
+  %\pdfbookmark{\listtheoremname}{listoftheorems}
+  %\listoftheorems[ignoreall,show={Lemma,Theorem,Korollar,Definition}]
 
-  \cleardoublepage
-  \phantomsection
-  \pdfbookmark{\lstlistlistingname}{listoflistings}
-  \lstlistoflistings
+  %\cleardoublepage
+  %\phantomsection
+  %\pdfbookmark{\lstlistlistingname}{listoflistings}
+  %\lstlistoflistings
 
-  \include{abkuerzungen}
+  %\include{abkuerzungen}
 
-  \cleardoublepage
-  \phantomsection
-  \pdfbookmark{\bibname}{bibliography}
-  \bibliography{literature}
+  %\cleardoublepage
+  %\phantomsection
+  %\pdfbookmark{\bibname}{bibliography}
+  %\bibliography{literature}
 \end{document}

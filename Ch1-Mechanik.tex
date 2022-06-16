@@ -1,0 +1,257 @@
+%!TEX root = thesis.tex
+
+\chapter{Klassische Mechanik: Kraft, Bewegung und Energie}
+\label{chapter-mechanik}
+
+Die sogenannte Klassische Mechanik ist eine der Grundfesten der Physik, und Gegenstand der menschlichen Neugier seit tausenden von Jahren. Bereits die alten Griechen und Ägypter beschäftigten sich damit, denn ohne sie wäre der Bau vieler der antiken Monumentalbauten nicht möglich gewesen.
+
+Richtig Fahrt gewann das Feld der klassischem Mechanik dann im Spätmittelalter und der Renaissance. während derer Gelehrte wie Newton, Foucault, Leibnitz und Gauss den Formalismus der Klassischen Mechanik entwickelten und auf die makroskopische Welt anwendeten. Nicht lange danach erkannte man auch, dass sehr analoge Gesetzte auch in der Mechanik der Atome und Moleküle untereinander gelten, und wie wir in \ref{chapter-materie} sehen werden dort zur Beschreibung von Phänomenen wie Wärme und Druck äußerst nützlich sind.
+
+%\section{Kraft, was ist das?}
+
+Wir betrachten hier den Formalismus der Mechanik nach Newton, dessen zentrales Element der Begriff der Kraft ist. 
+
+Mit Kraft beschreibt man in der Physik das Phänomen des mechanischen Einflusses den ein Objekt auf ein anderes ausübt. Was genau diesen Einfluss bewirkt, kann durchaus unterschiedlich sein, und wird uns neben diesem Kapiel auch in \ref{chapter-materie} und \ref{chapter-qmrt} noch näher beschäftigen.
+
+Neben den abstoßenden und anziehenden Kräften der elektrostatischen Kraft, auf die sich fast jede direkte Interaktion von Materie zurückführen lässt, gibt es auch noch die magnetische Kraft, die mit der elektrostatischen Kraft eng verwandt ist, und die Gravitationskraft. Weiterhin existieren noch die kernstarke Kraft und die kernschwache Kraft, die wir aber nicht näher betrachten werden.
+
+\section{Newton's Gesetze}
+\label{chapter-newtonslaws}
+
+\textit{Isaac Newton (1643-1727)} hat mit seinen Gesetzen die grundlegenden Zusammenhänge zwischen Kraft (Einheit \textit{Newton (N)}) und den anderen Größen der klassischen Mechanik formuliert.
+
+\begin{mdframed}[backgroundcolor=SRH_Warm_Grey!50,skipabove=3em,skipbelow=1em,frametitle=Newtons erstes Gesetz (Trägheitsprinzip)]
+\textit{Corpus omne perseverare in statu suo quiescendi vel movendi uniformiter in directum, nisi quatenus illud a viribus impressis cogitur statum suum mutare.}
+
+Ein Körper verharrt im Zustand der Ruhe oder der gleichförmig geradlinigen Bewegung, sofern er nicht durch einwirkende Kräfte zur Änderung seines Zustands gezwungen wird.
+\end{mdframed}
+
+Dieses Prinzip ist uns allen intuitiv eingängig, jeder weiß aus seiner Lebenserfahrung, dass Gegenstände nicht von selbst anfangen sich zu bewegen, wenn auf sie keine treibende Kraft wirkt.
+
+\begin{mdframed}[backgroundcolor=SRH_Warm_Grey!50,skipabove=3em,skipbelow=1em,frametitle=Newtons zweites Gesetz (Aktionsprinzip)]
+\textit{Mutationem motus proportionalem esse vi motrici impressae, et fieri secundum lineam rectam qua vis illa imprimitur.}
+
+Die Änderung der Bewegung ist der Einwirkung der bewegenden Kraft proportional und geschieht nach der Richtung derjenigen geraden Linie, nach welcher jene Kraft wirkt.
+\end{mdframed}
+
+Die Bewegung (also die Geschwindigkeit $\vec{v}$, Einheit \textit{Meter pro Sekunde ($\dfrac{m}{s}$)}) eines Körpers ändert sich also proportional zur einwirkenden Kraft. Proportional bedeudet hier, dass sich bei einer Vordopplung der Kraft auch die Wirkung verdoppelt, und sich bei einer Halbierung der Kraft entsprechend die Wirkung halbiert, so dass der Zusammenhang zwischen Kraft und Änderung der Geschwindigkeit in einem Diagramm also durch eine Grade dargestellt werden kann.
+\begin{eqnarray}
+\dot{\vec{v}} \propto \vec{F}
+\end{eqnarray}
+Der Punkt über $\dot{\vec{v}}$ bedeudet \textit{Änderung von}, hier also \textit{Änderung der Geschwindigkeit}
+
+Daraus lässt sich herleiten, dass die Änderung der Geschwindigkeit, also die Beschleunigung $\vec{a}$ (Einheit \textit{Meter pro Quadratsekunde oder Meter pro Sekunde hoch zwei ($\dfrac{m}{s^2}$))}) der Kraft dividiert durch die Masse (Einheit \textit{Kilogramm (kg)}) des beschleunigten Körpers entspricht.
+\begin{eqnarray}
+\dot{\vec{v}}=\vec{a}=\frac{\vec{F}}{m}
+\end{eqnarray}
+oder, umgestellt in die häufigfer geschriebene Form:
+\begin{eqnarray}
+\vec{F}=m \cdot \vec{a}
+\end{eqnarray}
+Quasi nebenbei haben wir damit auch den Zusammenhang zwischen Geschwindigkeit und Beschleunigung hergeleitet, nämlich dass die Beschleunigung die Änderung der Geschwindigkeit ist.
+\begin{eqnarray}
+\dot{\vec{v}}=\vec{a}
+\end{eqnarray}
+
+\begin{mdframed}[backgroundcolor=SRH_Warm_Grey!50,skipabove=3em,skipbelow=1em,frametitle=Newtons drittes Gesetz (Gegenwirkungsprinzip)]
+\textit{Actioni contrariam semper et aequalem esse reactionem: sive corporum duorum actiones in se mutuo semper esse aequales et in partes contrarias dirigi.}
+
+Kräfte treten immer paarweise auf. Übt ein Körper A auf einen anderen Körper B eine Kraft aus (actio), so wirkt eine gleich große, aber entgegen gerichtete Kraft von Körper B auf Körper A (reactio).
+\end{mdframed}
+Mathematisch formuliert lässt sich dieses Gesetz wie folgt schreiben:
+\begin{eqnarray}
+\vec{F}_{A\rightarrow B}=-\vec{F}_{B\rightarrow A}
+\end{eqnarray}
+
+
+\begin{mdframed}[backgroundcolor=SRH_Warm_Grey!50,skipabove=3em,skipbelow=1em,frametitle=Superpositionsprinzip der Kräfte]
+Wirken auf einen Punkt oder starren Körper mehrere Kräfte $\vec{F}_{1},\vec{F}_{2},\vec{F}_{3},\dotsc,\vec{F}_{n}$, so addieren sich diese vektoriell zu einer resultierenden Kraft $\vec{F}$ auf.
+\end{mdframed}
+Zusätzlich zu seinen Gesetzten hat Newton das Superpositionsprinzip formuliert, welches sich mit der Addition, also Überlagerung von Kräften befasst, und auch zur Zerlegung verwendet werden kann. Siehe dazu auch den mathematischen Anhang in \ref{chapter-mathe}.
+
+\section{Impuls, gleichförmige und beschleunigte Bewegung}
+\label{chapter-impuls}
+Entsprechend dem ersten Newtonschen Gesetz verändert sich der Bewegungszustand eines Objekts ohne äußeren Einfluss nicht. Ein Objekt, welches still steht wird auch weiterhin stehen still stehen, und Objekte die sich bewegen werden sich auch weiterhin bewegen. 
+
+An vielen Stellen der Physik ist es aber wichtig, nicht nur den Bewegungszustand zu kennen, sondern auch den "Aufwand", der notwendig ist, um diesen Zustand zu erreichen. Diese Information ist in der Geschwindigkeit nicht enthalten.
+
+Wenn wir uns an \ref{chapter-newtonslaws} zurück erinnern, wissen wir, dass die Kraft F die notwenig ist, um einen Geschwindigkeitszustand zu ändern dem Produkt aus Masse m und Beschleunigung a entspricht, und dass die Beschleunigung der der Änderung der Geschwindigkeit entspricht: 
+
+\begin{eqnarray}
+\vec{F}=m \cdot \vec{a}=m \cdot \dot{\vec{v}}
+\end{eqnarray}
+
+Um genau zu sein ist $\dot{\vec{v}}$ die lokale Änderung der Geschwindigkeit, also die Änderung während eines sehr kleinen Zeitraumes. 
+
+Wenn wir statt der Änderung der Geschwindigkeit über den gesamten Einflusszeitraum aufsummieren können wir daraus eine neue Größe ableiten, den sogenannten Impuls (Einheit: \textit{Kilogramm mal Meter pro Sekunde ($\dfrac{kg \cdot m}{s}$)})
+
+\begin{eqnarray}
+\vec{p}=m \cdot \vec{v}
+\end{eqnarray}
+
+Wir summieren also quasi die Beschleunigungsanteile über die Zeit auf, so dass der Impuls p eine art Aufzeichnung oder Aufsummierung der aufgewendeten Kraft ist. Mathematisch schreibt man dies wie folgt:
+
+\begin{eqnarray}
+\vec{p}=\int \dfrac{\vec{F}}{m} dt =\dfrac{1}{m}\int \vec{F} dt 
+\end{eqnarray}
+
+Es handelt sich dabei um ein sogenanntes Integral. Vereinfacht kann man ein Integral so lesen, dass man die Größe nach dem Integralzeichen $\int$ vor dem $d$ aufsummiert, und die Größe nach dem $d$ die Grüße ist, über die man aufsummiert. $\int \dfrac{\vec{F}}{m} dt$ bedeutet also, das die Änderung der Größe $\dfrac{\vec{F}}{m}$ mit der Zeit $t$ betrachtet, und den Wert von $\dfrac{\vec{F}}{m}$ jeweils für einen kleinen Zeitabschnitt aufsummiert, so dass man in Summe die Gesamtänderung von $\dfrac{\vec{F}}{m}$ im betrachteten Zeitraum erhält.
+
+$\vec{p}$ ist also ein Maß für den Aufwand, den man verwendet hat, um den aktuellen Bewegungszustand eines Objektes zu erhalten.
+
+Man kann Newtons Erstes Gesetz als auch wie folgt formulieren:
+
+\begin{mdframed}[backgroundcolor=SRH_Warm_Grey!50,skipabove=3em,skipbelow=1em,frametitle=Newtons erstes Gesetz (alternative Formulierung)]
+Der Impuls eines Körpers auf den keine externen Kräfte einwirken ist konstant.
+\end{mdframed}
+
+Dies entspricht dem Zustand der gleichförmigen Bewegung.
+
+Im Kontrast dazu spricht man von beschleunigter Bewegung, wenn eine Kraft auf den Körper einwirkt, und sich dadurch der Impuls ändert.
+
+\begin{mdframed}[backgroundcolor=SRH_Warm_Grey!50,skipabove=3em,skipbelow=1em,frametitle=Exkurs: Wo ist der Mittelpunkt des Universums?] 
+Wenn man von Stillstand und Bewegung spricht, muss man sich natürlich fragen: Relativ zu welchem Nullpunkt?
+Die einfache Antwort ist: Welcher Nullpunkt auch immer am einfachsten zu verwenden ist. Es gibt keinen inherenten \textit{Nullpunkt des Universums}. Stattdessen legt man sich seinen Nullpunkt zum Problem passend fest. Das einzig Wichtige dabei ist, dass man für ein System immer den gleichen Nullpunkt verwenden muss, und dass man bei Übergang zwischen verschiedenen Systemen mit unterschiedlichen Nullpunkten alle Größen entsprechend auf den neuen Nullpunkt umrechnen muss.
+\end{mdframed}
+
+\begin{mdframed}[backgroundcolor=SRH_Warm_Grey!50,skipabove=3em,skipbelow=1em,frametitle=Exkurs: Gravitatonskraft und Gravitationsbeschleunigung] 
+Gravitation erzeugt eine Kraft. Allgemein ist die Gravitation definiert als
+\begin{eqnarray}
+\vec{F}_{G}=\dfrac{m_1 \cdot m_2 \cdot G}{\vec{r}^2}
+\end{eqnarray}
+Da im Schwerefeld der Erde die Masse der Erde und der Abstand r für alle Objekte auf der Erdoberfläche annähernd gleich sind (der Radius r entspricht dem Abstand von der Erdoberfläche zum Erdmittelpunkt), kann man diese Größen mit der Gravitationskonstante G zusammenfassen. Daher ergibt sich auf der Erde eine vereinfachte Formel:
+\begin{eqnarray}
+\vec{F}_{G(Erde)}=m_{Objekt} \cdot g
+\end{eqnarray}
+mit der Gravitationsbeschleunigung $g=9.81\dfrac{m}{s^2}$. Für Überschlagsrechnungen ist oft sogar ein Wert von $10\dfrac{m}{s^2}$ ausreichend genau. Man kann daher in erster Näherung sagen, dass die Gravitationskraft auf einen Körper (knapp) dem Zehnfachen seiner Masse in kg entspricht.
+
+Entsprechend Newtons Drittem Gesetz wirkt auf einen Körper eine der Gravitationskraft entsprechende Gegenkraft wenn er auf einer Oberfläche aufliegt, die ihn am Fallen hindert. Ist das jedoch nicht der Fall, so befindet sich der Körper im freien Fall, und in diesem Fall wirkt statt der Kraft eine Beschleunigung, die den Fall des Körpers bestimmt. Diese Beschleunigung ist die oben errechnete Gravitationsbeschleunigung $g$. Es ist in diesem Fall zu beachen, dass die Beschleunigung des Falles nicht von der Masse des Körpers abhängt. Eine Feder fällt also genaus schnell wie ein Amboss, sofern keine anderen Kräfte (wie zum Beispiel Luftwiderstand) wirken.
+
+\end{mdframed}
+
+\section{Energie, Arbeit und Leistung}
+
+Man könnte an dieser Stelle annehmen, dass die kinetische Energie (Bewegungsenergie) eines Objekts dem Impuls entspricht. Dies ist jedoch nicht so. Neben dem im \ref{chapter-impuls} eingeführten und berechneten vektoriellen Impuls $\vec{p}$ hat ein Körper auch noch eine Bewegungserergie (Einheit der Energie: \textit{Joule (J)})
+\begin{eqnarray}
+E_{kin}=\dfrac{1}{2}m\vec{v}^2
+\end{eqnarray}
+Man beachte dabei, dass die Bewegungsenergie $E_{kin}$ anders als der Impuls keine vektorielle sondern eine skalare Größe ist, also keine Richtung sondern nur einen Wert besitzt.
+
+Die Begründung warum es zwei getrennte Größen \textit{Impuls} und \textit{Bewegungsenergie} gibt, ist mit einer mathematisch relativ aufwendigen Herleitung verbunden, und soll an dieser Stelle deshalb nicht näher ausgeführt werden.
+
+Hier kann auch der Begriff der \textit{Arbeit} $W$ eingeführt werden, die ebenfalls die Einheit \textit{Joule} hat. Arbeit ist als Änderung der Energie (hier der kinetischen Energie) definiert, und wird über das Skalarprodukt aus der Kraft $F$ und Strecke $s$ über die diese Kraft ausgeübt wird hergeleitet
+\begin{eqnarray}
+W = \Delta E_{kin}=\vec{F}\cdot \vec{s}
+\end{eqnarray} 
+Der große griechiche Buchstabe Delta, $\Delta$, bedeudet in der Physik in der Regel \textit{Gesamtänderung} oder \textit{Summe der Änderungen}.
+
+Während die Kraft also wie grade gesehen ein Maß für die Änderung der Energie, und damit die Menge der geleisteten Arbeit \textit{im Verhältnis zur zurückgelegten Strecke} $s$ ist, brauchen wir häufig auch ein Maß für die Änderung der Energe \textit{im Verhältnis zur vergangenen Zeit} $t$. Diese Größe bezeichnet man als \textit{Leistung} $P$ (Einheit \textit{Watt (W)}). Ihre Beziehung zur Arbeit und Energie ist 
+\begin{eqnarray}
+W = \Delta E = P\cdot t
+\end{eqnarray}
+oder nach $P$ aufgelöst
+\begin{eqnarray}
+P = \dfrac{W}{t} = \dfrac{\Delta E}{t}
+\end{eqnarray}
+
+\section{Reibung und Luftwiderstand}
+
+\section{Hebelgesetzte}
+
+
+\section{Praktische Anwendungen im Gesundheitswesen}
+
+\begin{mdframed}[backgroundcolor=SRH_Warm_Grey!50,skipabove=3em,skipbelow=1em,frametitle=Exkurs: Vektorzerlegung mit dem Vektorenparallelogramm] 
+Anders als bei Skalaren spielt bei Vektoren die Richung eine Rolle. Oft ist es notwendig, einen Gesamtvektor in zwei Teilvektoren zu zerlegen, die entlang bestimmter Achsen verlaufen. Dies ist die Umkehrung der Vektoraddition.
+
+Dazu zeichnet man zuerst den vorhandenen Vektor, sowie von seinem Fußpunkt aus die Richtungslinien der gewünschten Zerlegungsvektoren.  
+
+\begin{tikzpicture}
+\draw[dashed] (0,0) -- (-6,2);
+\draw[dashed] (0,0) -- (2,4);
+\draw[thick,->] (0,0) -- (0,3);
+\end{tikzpicture}
+
+Im zweiten Schritt Zeichnet man von der Spitze des Vektors aus Parallelen zu den beiden Richtungslinien, bis diese eine der Richtungslinien vom Fußpunkt schneiden
+
+\begin{tikzpicture}
+\draw[dashed] (0,0) -- (-6,2);
+\draw[dashed] (0,0) -- (2,4);
+\draw[thick,->] (0,0) -- (0,3);
+\draw[dashed] (0,3) -- (2,2.33);
+\draw[dashed] (0,3) -- (-1.5,0);
+\end{tikzpicture}
+
+Im letzten Schritt zeichnet man die Ergebnisvektoren ein. Diese führen vom Fußpunkt des ursprünlichen Vektors entlang der Richtungslinien bis zum Schnittpunkt mit der Parallelen von der Vektorspitze
+
+
+\begin{tikzpicture}
+\draw[dashed] (0,0) -- (-6,2);
+\draw[dashed] (0,0) -- (2,4);
+\draw[thick,->] (0,0) -- (0,3);
+\draw[dashed] (0,3) -- (2,2.33);
+\draw[dashed] (0,3) -- (-1.5,0);
+\draw[thick,->] (0,0) -- (-1.286,0.429);
+\draw[thick,->] (0,0) -- (1.286,2.571);
+\end{tikzpicture}
+
+Damit ist die Vektoraufteilung abgeschlossen, und die beiden Teilvektoren können für weitere Rechnungen verwendet werden.
+\end{mdframed}
+
+\section{Übungsaufgaben}
+\emph{Lösungen siehe \ref{chapter-loesungen}}
+
+\paragraph{Übung 1.1}
+
+%\textbf{Übung 1.1}
+
+Berechnen Sie, wie lange ein Fahrzeug, welches sich mit der Geschwindigkeit von $25 \frac{m}{s}$ vorwärts bewegt für eine Strecke von 100 Kilometern benötigt.
+
+\paragraph{Übung 1.2}
+
+Ein Fahrzeug wird aus dem Stand eine Minute lang mit einer gleichförmigen Beschleunigung $a=1.25\frac{m}{s^2}$ beschleunigt, und fährt im Anschluss mit gleichbleibender Geschwindigkeit eine Strecke von 175 Kilometern. Wie lange benötigt das Fahrzeug, um ab dem Stillstand an seinem Ziel anzukommen?
+
+\paragraph{Übung 1.3}
+
+Herr Müller geht mit seinem Hund Friedhelm spazieren. Leider ist Friedhelm heute nicht in der Stimmung für lange Spaziergänge, so dass Herr Müller permanent mit einer Kraft von 2N an der Leine ziehen muss, um Friedhelm zur Kooperation zu bewegen. Nach zwei Umrundungen des Häuserblocks (Seitenlänge 40m) hat Friedhelm alle notwendigen Geschäfte erledigt, und Herr Müller keine Lust mehr, so dass sich beide wieder in ihre Wohnung begeben. Wieviel Arbeit hat Herr Müller durch das Ziehen an Friedhelms Leine geleistet?
+
+\paragraph{Übung 1.4}
+
+Bufti Schorsch soll einen 20kg schweren Karton mit Infusionsbeuteln in den Schrank sortieren. Er möchte die Kiste dazu auf den Tisch heben, um den Inhalt leichter entnehmen zu können. Schorsch bemüht sich, den Karton rückenschonend zu heben, schafft dies aber nicht ganz. Er ist beim Heben immernoch um 10° nach vorne geneigt. Bestimmen Sie sowohl graphisch (durch Parallelogrammzerlegung) als auch rechnerisch, welche Kraft entlang Schorschs Wirbelsäule wirkt, und welche Kraft senkrecht dazu ein Biegemoment auf Schorschs Wirbelsäule ausübt.
+
+\paragraph{Übung 1.5}
+
+Heinz möchte auf seinem Balkon einen großen Blumentopf mit einer Palme aufstellen. Der Blumentopf ist Zylinderförmig, und hat einen Durchmesser von 50cm sowie eine Höhe von 1m. Die Palme, der Topf und die Planzerde wiegen zusammen 100kg. Im ungünstigsten Fall ist außerdem davon auszugehen, dass der Topf zusätzlich komplett mit Regenwasser voll läuft. Wasser hat eine Dichte von $1\frac{g}{cm^3}$, das heißt ein Liter Wasser wiegt 1kg. Von seinem Vermieter erfährt Heinz, dass der Balkon für eine Traglast von $5\frac{kN}{m^2}$ ausgelegt ist, die nicht überschritten werden darf. Kann Heinz seine Palme auf dem Balkon aufstellen?
+
+\textit{Die Wandstärke des Topfes soll vernachlässigt werden\\Die Formel zur Berechnung einer Kreisfläche ist $A_{Kreis}=\pi \cdot r^2$, die zur Berechnung des Zylindervolumens $V_{Zylinder}=A_{Kreis} \cdot h=\pi \cdot r^2 \cdot h $}
+
+\paragraph{Übung 1.6}
+
+\paragraph{Übung 1.7}
+
+\paragraph{Übung 1.8}
+
+\paragraph{Übung 1.9}
+
+\paragraph{Übung 1.10}
+
+
+\paragraph{Übung 1.11}
+
+\paragraph{Übung 1.12}
+
+\paragraph{Übung 1.13}
+
+\paragraph{Übung 1.14}
+
+\paragraph{Übung 1.15}
+
+\paragraph{Übung 1.16}
+
+\paragraph{Übung 1.17}
+
+\paragraph{Übung 1.18}
+
+\paragraph{Übung 1.19}
+
+\paragraph{Übung 1.20}
